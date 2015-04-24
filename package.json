@@ -1,0 +1,34 @@
+{
+  "name": "begins-with",
+  "version": "1.0.0",
+  "description": "Checks if string begins with the given target string",
+  "license": "MIT",
+  "repository": "kevva/begins-with",
+  "author": {
+    "name": "Kevin Mårtensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "https://github.com/kevva"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "begins",
+    "match",
+    "string",
+    "test",
+    "with"
+  ],
+  "dependencies": {
+    "escape-string-regexp": "^1.0.3"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
