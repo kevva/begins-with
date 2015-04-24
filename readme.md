@@ -16,8 +16,16 @@ $ npm install --save begins-with
 var beginsWith = require('begins-with');
 
 beginsWith('foo bar cat', 'foo');
+//=> true
+
 beginsWith('123foobar', '123foo');
+//=> true
+
 beginsWith('+lol+foo+bar', '+lol');
+//=> true
+
+beginsWith('foobar', 'cat');
+//=> false
 ```
 
 
