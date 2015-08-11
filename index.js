@@ -1,5 +1,4 @@
 'use strict';
-
 var escapeStringRegexp = require('escape-string-regexp');
 
 module.exports = function (str, match) {
