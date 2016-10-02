@@ -1,7 +1,4 @@
 'use strict';
-var escapeStringRegexp = require('escape-string-regexp');
+const escapeStringRegexp = require('escape-string-regexp');
 
-module.exports = function (str, match) {
-	var regex = new RegExp('^' + escapeStringRegexp(match));
-	return regex.test(str);
-};
+module.exports = (str, match) => new RegExp('^' + escapeStringRegexp(match)).test(str);

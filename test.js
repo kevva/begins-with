@@ -1,16 +1,14 @@
-'use strict';
-var test = require('ava');
-var beginsWith = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(beginsWith('foo bar cat', 'fo'));
-	t.assert(beginsWith('foo bar cat', 'foo '));
-	t.assert(beginsWith('foobar', 'foo'));
-	t.assert(beginsWith('123foobar', '123foo'));
-	t.assert(beginsWith('+lol+foo+bar', '+lol'));
-	t.assert(beginsWith('***', '***'));
-	t.assert(!beginsWith('***', '+**'));
-	t.assert(!beginsWith('*', '**'));
-	t.assert(!beginsWith('foobar', 'bar'));
-	t.end();
+test(t => {
+	t.true(m('foo bar cat', 'fo'));
+	t.true(m('foo bar cat', 'foo '));
+	t.true(m('foobar', 'foo'));
+	t.true(m('123foobar', '123foo'));
+	t.true(m('+lol+foo+bar', '+lol'));
+	t.true(m('***', '***'));
+	t.false(m('***', '+**'));
+	t.false(m('*', '**'));
+	t.false(m('foobar', 'bar'));
 });

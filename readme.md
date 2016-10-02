@@ -13,7 +13,7 @@ $ npm install --save begins-with
 ## Usage
 
 ```js
-var beginsWith = require('begins-with');
+const beginsWith = require('begins-with');
 
 beginsWith('foo bar cat', 'foo');
 //=> true
@@ -37,14 +37,12 @@ Checks if `string` begins with `match`
 
 #### string
 
-*Required*  
 Type: `string`
 
 String to be tested against.
 
 #### match
 
-*Required*  
 Type: `string`
 
 String to test with.
